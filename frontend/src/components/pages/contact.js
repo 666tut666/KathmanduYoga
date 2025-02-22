@@ -84,6 +84,13 @@ function Contact() {
       });
   };
 
+  // Implement form validation logic
+  const validateEmail = (email) => {
+    return String(email)
+      .toLowerCase()
+      .match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/);
+  };
+
   return (
     <Container maxWidth="md" className={classes.container}>
       <Typography variant="h3" className={classes.title} align="center">

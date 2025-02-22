@@ -3,13 +3,13 @@ from sqlalchemy.orm import Session
 from passlib.context import CryptContext
 from datetime import datetime, timedelta
 from jose import JWTError, jwt
-from ..database import get_db
+from ..database import get_db, SECRET_KEY
 from ..models import User
 from ..schemas import UserCreate
 from pydantic import BaseModel
 
 # Secret key to encode and decode JWT tokens
-SECRET_KEY = "your_secret_key"
+# Insecure hardcoded secret key
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
