@@ -1,0 +1,13 @@
+**/__pycache__
+**/logs
+**/.env
+**/build.sh
+**/.DS_Store
+**/.next
+**/node_modules
+**/dist
+**/coverage
+**/yarn-error.log
+**/.pdm-python
+**/.venv
+**/build

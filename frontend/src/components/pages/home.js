@@ -3,6 +3,8 @@ import { Box, Container, Typography, Button, Paper } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { Zoom, Fade, Slide } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const useStyles = makeStyles((theme) => ({
   banner: {
@@ -94,6 +96,8 @@ const useStyles = makeStyles((theme) => ({
 function Home() {
   const classes = useStyles();
   const navigate = useNavigate();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
     <Container className={classes.container}>
@@ -103,10 +107,15 @@ function Home() {
           alt="Himalayan Peaks Yoga" 
           style={{ 
             width: "100%", 
-            height: "400px", 
+            height: isMobile ? "300px" : "400px",
             objectFit: "cover",
-            objectPosition: "top"
+            objectPosition: isMobile ? "top" : "center",
+            borderRadius: "20px",
+            boxShadow: "0 10px 30px rgba(0, 0, 0, 0.1)",
+            marginBottom: "32px",
+            marginTop: "40px"
           }}
+          loading="lazy"
         />
       </Zoom>
       <Fade in={true} style={{ transitionDelay: "400ms" }}>

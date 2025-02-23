@@ -93,11 +93,10 @@ function Contact() {
 
   return (
     <Container maxWidth="md" className={classes.container}>
-      <Typography variant="h3" className={classes.title} align="center">
-        Contact Us
+      <Typography variant="h3" className={classes.title} align="center"><b><u>
+        Contact Us</u></b>
       </Typography>
       <Typography variant="body1" className={classes.contactInfo} align="center">
-        Contact information for Kathmandu Yoga.
         <p>Dhobighat near Dhungedhara, Lalitpur, Nepal.</p>
         <p>+977-98511-68145, +977-98030-28296</p>
         <p 

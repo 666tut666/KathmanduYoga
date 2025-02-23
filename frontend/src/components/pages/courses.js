@@ -1,117 +1,186 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import { useState } from 'react';
-import { Grid, Container } from '@mui/material';
-import { makeStyles } from '@mui/styles';
-
-const useStyles = makeStyles((theme) => ({
-  container: {
-    padding: "32px",
-    backgroundColor: "#f9f9f9",
-    borderRadius: "20px",
-    boxShadow: "0 10px 30px rgba(0, 0, 0, 0.1)",
-    marginTop: "40px",
-  },
-  title: {
-    fontWeight: "700",
-    color: "#333",
-    marginBottom: "32px",
-    fontFamily: "Arial, sans-serif",
-    textAlign: "center",
-  },
-  card: {
-    minWidth: 275,
-  },
-  card1: {
-    backgroundColor: '#FFEBEE',
-  },
-  card2: {
-    backgroundColor: '#E3F2FD',
-  },
-  card3: {
-    backgroundColor: '#E8F5E9',
-  },
-  card4: {
-    backgroundColor: '#FFF3E0',
-  },
-  card5: {
-    backgroundColor: '#F3E5F5',
-  },
-  cardTitle: {
-    fontSize: 20,
-    fontWeight: "bold",
-    color: '#000',
-  },
-  cardContent: {
-    marginTop: 2,
-  },
-}));
+import { Container, Grid, Card, CardContent, CardActions, Button, Typography, Box, Collapse } from '@mui/material';
+import { styled } from '@mui/system';
+import { Spa, SelfImprovement, Groups, School, Favorite } from '@mui/icons-material';
 
 const coursesData = [
   {
-    title: "<strong>General Package</strong>",
-    description: "A practical session of 1 hour to maintain general health and wellbeing...",
+    title: 'General Package',
+    icon: <Spa fontSize="large" />, 
+    description: 'A comprehensive practical session focusing on maintaining overall health and wellbeing through guided practices. Includes diverse asana sequences, pranayama techniques, mudra practices, and Yoga Nidra meditation.',
+    highlights: ['Suitable for all levels', 'Fully guided sessions', 'Balanced mind-body approach']
   },
   {
-    title: "<strong>Specific Packages</strong>",
-    description: "These packages are tailored for individuals or groups...", 
+    title: 'Specific Packages',
+    icon: <Groups fontSize="large" />,
+    description: 'Tailored programs combining theory and practice for specific needs and groups:',
+    details: [
+      'Yoga Therapy for Chronic Conditions (Hypertension, Diabetes, Respiratory problems, Gynecological problems, Infertility, Back pain, and others)',
+      'Pre/Postnatal Wellness',
+      'Stress Reduction Techniques',
+      'Youth & Educator Programs',
+      'Senior-Friendly Practices',
+      'Corporate Wellness Modules',
+      'Yoga for Children',
+      'Yoga for School Teachers',
+      'Yoga for Medical Practitioners and Students',
+      'Yoga for Executives',
+      'Yoga for Psychological Management (Depression, Anxiety, PTSD, OCD, and others)'
+    ]
   },
   {
-    title: "<strong>Intensive Packages</strong>",
-    description: "For those keen to deepen their knowledge...",
+    title: 'Intensive Packages',
+    icon: <SelfImprovement fontSize="large" />,
+    description: 'These packages are for those who are keenly interested to deepen and widen their knowledge and experience in different aspects of yogic sciences. Depending upon your need, interest and convenience, we have designed the packages with different options:',
+    options: [
+      {
+        name: '15 Hours Package',
+        practice: 'asana, pranayama, mudra and yoga nidra / guided meditation',
+        theory: 'general philosophy, history, theory and principles of yoga'
+      },
+      {
+        name: '75 Hours Package',
+        practice: 'asana, pranayama, mudra, bandha and yoga nidra',
+        theory: 'general philosophy, history, theory and principles of yoga',
+        note: 'This package covers a more extended form of theory and practice'
+      },
+    ],
+    certification: false
   },
   {
-    title: "<strong>Certification Course on Yogic Studies</strong>",
-    description: "A comprehensive course covering the philosophical foundations...",
-  },
+    title: 'Certification Course on Yogic Studies',
+    icon: <School fontSize="large" />,
+    description: 'Complete immersion program combining practical mastery with theoretical understanding. Includes comprehensive assessment and certification upon completion.',
+    options: [
+      {
+        name: '100 Hours Package',
+        practice: 'asana, pranayama, mudra, bandha and yoga nidra',
+        theory: 'general philosophy, history, theory and principles of yoga',
+        note: 'A certificate is issued after the completion of the package.'
+      },
+    ],
+  }
 ];
 
-export default function Courses() {
-  const classes = useStyles();
-  const [expandedCourse, setExpandedCourse] = useState(null);
+const GradientContainer = styled(Container)(({ theme }) => ({
+  background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)',
+  padding: theme.spacing(6),
+  borderRadius: '2rem',
+  marginTop: theme.spacing(8),
+  boxShadow: '0 16px 40px -12px rgba(0,0,0,0.15)'
+}));
 
-  const handleLearnMoreClick = (index) => {
-    setExpandedCourse(expandedCourse === index ? null : index);
+const StyledCard = styled(Card)(({ theme }) => ({
+  minHeight: 300,
+  borderRadius: '1.5rem',
+  transition: 'all 0.3s cubic-bezier(.25,.8,.25,1)',
+  background: 'rgba(255, 255, 255, 0.9)',
+  backdropFilter: 'blur(10px)',
+  '&:hover': {
+    transform: 'translateY(-8px)',
+    boxShadow: '0 12px 24px -6px rgba(0,0,0,0.15)'
+  }
+}));
+
+const IconWrapper = styled(Box)(({ theme }) => ({
+  padding: theme.spacing(2),
+  background: 'linear-gradient(45deg, #2c3e50 0%, #3498db 100%)',
+  width: 60,
+  height: 60,
+  borderRadius: '50%',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  color: 'white',
+  marginBottom: theme.spacing(2)
+}));
+
+export default function Courses() {
+  const [expanded, setExpanded] = React.useState(null);
+
+  const toggleExpand = (index) => {
+    setExpanded(expanded === index ? null : index);
   };
 
   return (
-    <Container className={classes.container}>
-      <Typography variant="h3" className={classes.title}>
-        Our Courses
+    <GradientContainer maxWidth="lg">
+      <Typography variant="h2" component="h2" gutterBottom sx={{
+        textAlign: 'center',
+        fontWeight: 700,
+        color: '#2c3e50',
+        mb: 6,
+        fontSize: { xs: '2rem', md: '2.5rem' },
+        '&:after': {
+          content: '""',
+          display: 'block',
+          width: '80px',
+          height: '4px',
+          background: '#3498db',
+          margin: '1.5rem auto'
+        }
+      }}>
+        Transformative Yoga Programs
       </Typography>
-      <Grid container spacing={3}>
+
+      <Grid container spacing={4}>
         {coursesData.map((course, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
-            <Card className={`${classes.card} ${classes['card' + (index + 1)]}`}>
-              <CardContent>
-                <Typography variant="h5" gutterBottom 
-                  dangerouslySetInnerHTML={{ __html: course.title }} 
-                />
-                <Typography className={classes.cardSubtitle}>
-                  {course.description.split(' ').slice(0, 10).join(' ')}...
+          <Grid item xs={12} sm={6} md={3} key={index}>
+            <StyledCard>
+              <CardContent sx={{ px: 3, pt: 3 }}>
+                <IconWrapper>{course.icon}</IconWrapper>
+                <Typography variant="h5" gutterBottom sx={{ fontWeight: 700, color: '#2c3e50', minHeight: 72 }}>
+                  {course.title}
                 </Typography>
-                {expandedCourse === index && (
-                  <Box className={classes.cardContent}>
-                    <Typography variant="body2">
-                      {course.description}
-                    </Typography>
+                <Typography variant="body1" sx={{ color: '#6c757d', mb: 2, minHeight: 80 }}>
+                  {course.description}
+                </Typography>
+                <Collapse in={expanded === index}>
+                  <Box sx={{ pl: 2 }}>
+                    {course.highlights && course.highlights.map((item, i) => (
+                      <Typography key={i} variant="body2" sx={{ color: '#6c757d', mb: 1, display: 'flex', alignItems: 'center' }}>
+                        <Favorite color="primary" sx={{ fontSize: 16, mr: 1 }} /> {item}
+                      </Typography>
+                    ))}
+                    {course.details && course.details.map((detail, i) => (
+                      <Typography key={i} variant="body2" sx={{ color: '#6c757d', mb: 1 }}>
+                        - {detail}
+                      </Typography>
+                    ))}
+                    {course.options && course.options.map((option, i) => (
+                      <Box key={i} sx={{ mb: 2 }}>
+                        <Typography variant="subtitle2" sx={{ fontWeight: 600, color: '#3498db' }}>
+                          {option.name}
+                        </Typography>
+                        <Typography variant="body2" sx={{ color: '#6c757d' }}>
+                          Practice: {option.practice}
+                        </Typography>
+                        <Typography variant="body2" sx={{ color: '#6c757d' }}>
+                          Theory: {option.theory}
+                        </Typography>
+                        {option.note && (
+                          <Typography variant="body2" sx={{ color: '#6c757d' }}>
+                            {option.note}
+                          </Typography>
+                        )}
+                      </Box>
+                    ))}
+                    {course.note && (
+                      <Typography variant="body2" sx={{ color: '#6c757d', mt: 1 }}>
+                        {course.note}
+                      </Typography>
+                    )}
                   </Box>
-                )}
+                </Collapse>
               </CardContent>
-              <CardActions>
-                <Button size="small" onClick={() => handleLearnMoreClick(index)}>
-                  {expandedCourse === index ? "Show Less" : "Learn More"}
+              <CardActions sx={{ px: 3, pb: 3 }}>
+                <Button size="small" onClick={() => toggleExpand(index)} sx={{ fontWeight: 600, color: '#3498db', '&:hover': { color: '#2980b9', bgcolor: 'transparent' } }}>
+                  {expanded === index ? 'Show Less' : 'Explore More'}
                 </Button>
               </CardActions>
-            </Card>
+            </StyledCard>
           </Grid>
         ))}
       </Grid>
-    </Container>
+    </GradientContainer>
   );
 }

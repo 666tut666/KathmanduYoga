@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from ..database import get_db
 from ..models import Testimonial
@@ -16,4 +16,4 @@ def create_testimonial(testimonial: TestimonialCreate, db: Session = Depends(get
     db.add(db_testimonial)
     db.commit()
     db.refresh(db_testimonial)
-    return db_testimonial 
+    return db_testimonial

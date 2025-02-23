@@ -1,0 +1,44 @@
+
+networks:
+  internal_network:
+    driver: bridge
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: postgres
+    environment:
+      POSTGRES_USER: kathmanduyoga
+      POSTGRES_PASSWORD: kathmanduyoga
+      POSTGRES_DB: kathmanduyoga
+    user: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+    networks:
+      - internal_network
+
+  website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: website
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    environment:
+      POSTGRES_USER: kathmanduyoga
+      POSTGRES_PASSWORD: kathmanduyoga
+      POSTGRES_SERVER: postgres
+      POSTGRES_DATABASE: kathmanduyoga
+      POSTGRES_PORT: 5432
+    networks:
+      - internal_network
+
+volumes:
+  postgres_data:
