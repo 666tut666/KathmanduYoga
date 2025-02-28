@@ -34,7 +34,7 @@ const coursesData = [
     description: 'These packages are for those who are keenly interested to deepen and widen their knowledge and experience in different aspects of yogic sciences. Depending upon your need, interest and convenience, we have designed the packages with different options:',
     options: [
       {
-        name: '15 Hours Package',
+        name: '30 Hours Package',
         practice: 'asana, pranayama, mudra and yoga nidra / guided meditation',
         theory: 'general philosophy, history, theory and principles of yoga'
       },
@@ -53,7 +53,7 @@ const coursesData = [
     description: 'Complete immersion program combining practical mastery with theoretical understanding. Includes comprehensive assessment and certification upon completion.',
     options: [
       {
-        name: '100 Hours Package',
+        name: '200 Hours Package',
         practice: 'asana, pranayama, mudra, bandha and yoga nidra',
         theory: 'general philosophy, history, theory and principles of yoga',
         note: 'A certificate is issued after the completion of the package.'
