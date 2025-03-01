@@ -217,8 +217,8 @@ function AboutUs() {
           </a><br /><br />
 
           Considering Yoga NOT just as science of body but as science of life.<br />
-          EXPERIENCE GOOD<br />
-          EXPRESS GOOD
+          <b><i>EXPERIENCE GOOD<br />
+          EXPRESS GOOD</i></b>
         </>
       ),
     },
@@ -283,7 +283,7 @@ function AboutUs() {
 
       {/* Introduction */}
       <Typography variant="body1" className={classes.description}>
-        Welcome to <span className={classes.highlight}>Kathmandu Yoga</span>, where we blend ancient wisdom with modern practices to help you achieve holistic well-being. Founded by <span className={classes.highlight}>Sannyasi Premananda</span> in 1996, our journey began with a deep passion for yoga and its transformative power. After earning his <span className={classes.highlight}>M.A. in Yoga Psychology</span> with first-class honors from the prestigious <span className={classes.highlight}>Bihar School of Yoga</span> in 2000, Sannyasi Premananda has dedicated his life to sharing the profound benefits of yoga with the world.
+        Welcome to <span className={classes.highlight}>Kathmandu Yoga</span>, where we blend ancient wisdom with modern lifestyle to help you achieve holistic well-being. Founded by <span className={classes.highlight}>Sannyasi Premananda</span> in 1996, our journey began with a deep passion for yoga and its transformative power. After earning his <span className={classes.highlight}>M.A. in Yoga Psychology</span> with first-class honors from the prestigious <span className={classes.highlight}>Bihar School of Yoga</span> in 2000, Sannyasi Premananda has dedicated his life to sharing the profound benefits of yoga with the world.
       </Typography>
 
       {/* Our Founder Section */}
@@ -300,10 +300,10 @@ function AboutUs() {
             Our Founder/Instructor
           </Typography>
           <Typography variant="body1" className={classes.missionContent}>
-            <span className={classes.highlight}>Premananda (Shiva Basyal)</span> is the Founder/Instructor of Kathmandu School of Yoga (Govt. Regd. # 8509/202/063/064). He holds an <span className={classes.highlight}>M.A. in Yoga Psychology</span> from Bihar Yoga Bharati (the First Yoga University in the World), India, and is the first registered and certified yoga master in Nepal. With over <span className={classes.highlight}>27 years of experience</span> in yoga, he has successfully applied his expertise to various sectors, including government agencies, INGOs, NGOs, and private sectors in health and education.
+            <span className={classes.highlight}>Premananda (Shiva Basyal)</span> is the Founder/Instructor of Kathmandu Yoga. He holds an <span className={classes.highlight}>M.A. in Yoga Psychology</span> from Bihar Yoga Bharati (the First Yoga University in the World), India, and is the first registered and certified yoga master in Nepal. With over <span className={classes.highlight}>27 years of experience</span> in yoga, he has successfully applied his expertise to various sectors, including government agencies, INGOs, NGOs, and private sectors in health and education. He is also an M. A. in Sociology from Tribhuvan University, Kathmandu, Nepal. 
           </Typography>
           <Typography variant="body1" className={classes.missionContent}>
-            Premananda is initiated as a <span className={classes.highlight}>Karma Sannyasin</span> by his Guru, <span className={classes.highlight}>Paramhamsa Niranjanananda Saraswati</span>. Kathmandu School of Yoga follows the techniques systematized by <span className={classes.highlight}>Paramahamsa Satyananda Saraswati</span>, the Founder of Satyananda Yoga/Bihar Yoga Tradition (<a href="http://www.biharyoga.net" target="_blank" rel="noopener noreferrer" className={classes.highlight}>www.biharyoga.net</a>), addressing the diverse interests and needs of aspirants.
+            <br></br> Premananda is initiated as a <span className={classes.highlight}>Karma Sannyasi</span> by his Guru, <span className={classes.highlight}>Paramhamsa Niranjanananda Saraswati</span>. Kathmandu Yoga follows the techniques systematized by <span className={classes.highlight}>Paramahamsa Satyananda Saraswati</span>, the Founder of Satyananda Yoga/Bihar Yoga Tradition (<a href="http://www.biharyoga.net" target="_blank" rel="noopener noreferrer" className={classes.highlight}>www.biharyoga.net</a>), addressing the diverse interests and needs of aspirants.
           </Typography>
         </Grid>
       </Grid>
@@ -315,7 +315,7 @@ function AboutUs() {
             Our Mission
           </Typography>
           <Typography variant="body1" className={classes.missionContent}>
-            At Kathmandu Yoga, our mission is to create a welcoming and inclusive space where everyone—from beginners to advanced practitioners—can explore the transformative power of yoga. We believe yoga is not just a physical practice but a way of life that nurtures the mind, body, and soul. Our goal is to empower you to live a balanced, healthy, and fulfilling life through the teachings of yoga.
+          At Kathmandu Yoga, our mission is to create a welcoming and inclusive space where everyone—from beginners to advanced practitioners—can explore the transformative power of yoga. We believe yoga is not just a physical practice but a way of life that nurtures the body, mind, emotion and soul. Our goal is to empower you to live a healthy, happy and harmonious life through the understanding, practice and application of yoga in every moment of life.
           </Typography>
         </CardContent>
       </Card>
@@ -327,7 +327,7 @@ function AboutUs() {
             Our Core Values
           </Typography>
           <Typography variant="body1" className={classes.missionContent}>
-            At the heart of Kathmandu Yoga are our core values: <span className={classes.highlight}>awareness</span>, <span className={classes.highlight}>inclusivity</span>, and <span className={classes.highlight}>holistic well-being</span>. We are committed to creating a supportive community where everyone feels valued and respected. Our compassionate instructors guide you with personalized attention, ensuring your yoga journey is both enriching and transformative.
+          At the heart of Kathmandu Yoga, our core values are: awareness, inclusivity, and holistic well-being. We are committed to creating a supportive community where everyone feels valued and respected. Our compassionate instructors guide you with personalized attention, ensuring your yoga journey to its fulfillment.
           </Typography>
         </CardContent>
       </Card>
@@ -339,7 +339,7 @@ function AboutUs() {
             What Sets Us Apart
           </Typography>
           <Typography variant="body1" className={classes.missionContent}>
-            What makes Kathmandu Yoga unique is our deep-rooted connection to the <span className={classes.highlight}>Satyananda Yoga Tradition</span>. This tradition, rooted in ancient wisdom, emphasizes the integration of physical postures (<span className={classes.highlight}>asanas</span>), breath control (<span className={classes.highlight}>pranayama</span>), and meditation to achieve harmony in life. Our classes are designed to be accessible to all, whether you're a beginner or an experienced practitioner. We also offer <span className={classes.highlight}>online classes</span>, making yoga accessible to anyone, anywhere.
+           What makes Kathmandu Yoga unique is our deep-rooted connection to the Satyananda Yoga Tradition. This tradition, rooted in ancient wisdom, emphasizes the integration of experience and expression of yoga to achieve harmony in life. Our classes are designed to be accessible to all, whether you're a beginner or an experienced practitioner. We also offer online classes, making yoga accessible to anyone, anywhere.
           </Typography>
         </CardContent>
       </Card>
