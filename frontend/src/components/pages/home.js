@@ -3,8 +3,6 @@ import { Box, Container, Typography, Button, Paper } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { Zoom, Fade, Slide } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import { useTheme } from '@mui/material/styles';
-import useMediaQuery from '@mui/material/useMediaQuery';
 
 const useStyles = makeStyles((theme) => ({
   banner: {
@@ -96,8 +94,6 @@ const useStyles = makeStyles((theme) => ({
 function Home() {
   const classes = useStyles();
   const navigate = useNavigate();
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
     <Container className={classes.container}>
@@ -107,15 +103,10 @@ function Home() {
           alt="Himalayan Peaks Yoga" 
           style={{ 
             width: "100%", 
-            height: isMobile ? "300px" : "400px",
+            height: "400px", 
             objectFit: "cover",
-            objectPosition: isMobile ? "top" : "center",
-            borderRadius: "20px",
-            boxShadow: "0 10px 30px rgba(0, 0, 0, 0.1)",
-            marginBottom: "32px",
-            marginTop: "40px"
+            objectPosition: "top"
           }}
-          loading="lazy"
         />
       </Zoom>
       <Fade in={true} style={{ transitionDelay: "400ms" }}>
@@ -135,7 +126,7 @@ function Home() {
             Kathmandu Yoga
           </Typography>
           <Typography variant="body1" className={classes.description}>
-            Kathmandu Yoga is a registered yoga institution with the Government of Nepal. We are dedicated to sharing the transformative power of yoga, following the teachings of Paramahamsa Satyananda Saraswati, the founder of Satyananda Yoga and Bihar Yoga. Our teachings are based on the Yoga Chakra (Wheel of Yoga) concept, which integrates physical, mental, and spiritual practices for holistic well-being.
+            Kathmandu Yoga is a registered yoga institution with the Government of Nepal. We are dedicated to sharing the transformative power of yoga, following the teachings of Paramahamsa Satyananda Saraswati, the founder of Satyananda Yoga and Bihar Yoga. Our teachings are based on the Yoga Chakra (Wheel of Yoga) concept, which integrates physical, mental, emotional and spiritual practices for holistic well-being ultimately inspiring to express divinity and live a divine life.
           </Typography>
         </Paper>
       </Slide>
@@ -146,12 +137,12 @@ function Home() {
             Why Kathmandu Yoga?
           </Typography>
           <Typography variant="body1" className={classes.description}>
-            • Thousands of aspirants from over 42 countries and 5 continents have been inspired by our teachings. <br />
+            • Thousands of aspirants from over 42 countries of 5 continents have been inspired by our teachings. <br />
             • Our founder, Sannyasi Premananda (Shiva Basyal), holds a Master's Degree in Yoga Psychology with First Class honors from Bihar Yoga Bharati, the first yoga university in the world. <br />
             • With over 26 years of dedicated practice and teaching, he is Nepal's first registered and certified yoga master. <br />
             • Our syllabus is rooted in classical scriptures, ensuring an authentic and transformative yoga experience. <br />
             • We offer personalized, one-on-one, and group sessions tailored to your needs and interests. <br />
-            • Our approach goes beyond physical fitness, focusing on the mind-body-spirit connection to help you experience yoga in its fullest form.
+            • Our approach goes beyond physical fitness, focusing on the body-mind-spirit connection to help you experience yoga in its fullest form.
           </Typography>
         </Paper>
       </Slide>
@@ -162,7 +153,7 @@ function Home() {
             Nature of Classes
           </Typography>
           <Typography variant="body1" className={classes.description}>
-            Our classes are fully guided, with a focus on deepening your awareness of each practice. Whether you prefer one-on-one sessions or group classes with friends or family, we cater to your needs. Online classes are also available for those who cannot attend in person.
+            Our classes are fully guided, with a focus on deepening your awareness of each practice. Whether you prefer one-on-one sessions or group classes with friends or family, we cater to your needs. <b>Online classes are also available for those who cannot attend in person.</b>
           </Typography>
         </Paper>
       </Slide>
@@ -173,7 +164,7 @@ function Home() {
             Time Schedule
           </Typography>
           <Typography variant="body1" className={classes.description}>
-            We offer flexible schedules to accommodate your lifestyle. Classes can be arranged at any time, depending on your and our availability. All appointments must be made in advance.
+            We offer flexible schedules to accommodate your conveniences. Classes can be arranged at any time, depending on your and our availability. All appointments must be made in advance.
           </Typography>
         </Paper>
       </Slide>
