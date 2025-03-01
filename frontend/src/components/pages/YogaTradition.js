@@ -89,7 +89,7 @@ function YogaTradition() {
   return (
     <Container className={classes.container}>
       <Typography variant="h2" className={classes.title}>
-        Yoga Tradition
+        Our Tradition
       </Typography>
 
       {/* Saraswati Parampara - Image Section Removed */}
@@ -167,7 +167,7 @@ function YogaTradition() {
             </Typography>
             <Divider className={classes.divider} />
             <Typography variant="body1" className={classes.guruDescription}>
-              Swami Sivananda Saraswati, born Kuppuswami in 1887 in Tamil Nadu, India, was a renowned yoga guru and spiritual teacher. After practicing medicine for several years, he renounced worldly life to pursue spiritual enlightenment. In 1936, he founded the Divine Life Society in Rishikesh, which promotes yoga, Vedanta, and a holistic approach to well-being. Swami Sivananda authored over 200 books on yoga, Vedanta, and various subjects, leaving a lasting legacy in the field of spiritual and physical wellness. His teachings emphasized the importance of a balanced life through the principles of yoga, emphasizing physical health, mental clarity, and spiritual growth. His disciples, including Swami Vishnudevananda and Swami Chidananda, have continued to spread his teachings worldwide through various Sivananda Yoga Vedanta Centres. His message of "Be Good, Do Good, Be Kind" continues to inspire millions to lead a divine life.
+             Swami Sivananda Saraswati, born Kuppuswami in 1887 in Tamil Nadu, India, was a renowned yoga master and spiritual luminary. After practicing medicine for several years, he renounced worldly life to pursue spiritual enlightenment. In 1936, he founded the Divine Life Society in Rishikesh, which promotes yoga, Vedanta, and a holistic approach to well-being. Swami Sivananda authored over 200 books on yoga, Vedanta, and various subjects, leaving a lasting legacy in the field of spiritual and physical wellness. His teachings emphasized the importance of a balanced life through the principles of yoga, emphasizing physical health, mental clarity, and spiritual growth. One of his disciples, Swami Satyananda Saraswati, continued to spread his teachings worldwide. His message of "Be Good, Do Good, Be Kind, Be Compassionate" continues to inspire millions to lead a divine life.
             </Typography>
           </Grid>
         </Grid>
@@ -194,7 +194,7 @@ function YogaTradition() {
             </Typography>
             <Divider className={classes.divider} />
             <Typography variant="body1" className={classes.guruDescription}>
-              Swami Satyananda Saraswati, born in 1923 in Almora, Uttarakhand, was a distinguished yoga guru and spiritual luminary. As a young man, he became a disciple of Swami Sivananda Saraswati, immersing himself in rigorous spiritual training and service. In 1964, he founded the Bihar School of Yoga, which has become one of the foremost institutions for yoga education globally. Swami Satyananda's contributions to yoga literature are vast, with over 80 influential books such as "Asana Pranayama Mudra Bandha" that are considered essential reading for yoga practitioners. Swami Satyananda's teachings emphasized a holistic approach to well-being, integrating physical, mental, and spiritual practices. He introduced and systematized practices like Yoga Nidra, which have gained worldwide acclaim for their profound benefits. Throughout his life, he traveled extensively, establishing ashrams and yoga centers, and spreading his message of self-realization and inner peace. Swami Satyananda's legacy lives on through the Bihar School of Yoga and the countless individuals and teachers he inspired, continuing to guide practitioners on their path to holistic health and spiritual enlightenment.
+            Swami Satyananda Saraswati, born in 1923 in Almora, Uttarakhand, was a distinguished yoga exponent and spiritual luminary. As a young man, he became a disciple of Swami Sivananda Saraswati, immersing himself in rigorous spiritual training and service. In 1964, he founded the Bihar School of Yoga, which has become one of the foremost institutions for yoga education globally. Swami Satyananda's contributions to yoga literature are vast, with over 80 influential books such as "Asana Pranayama Mudra Bandha" that are considered essential reading for yoga practitioners. Swami Satyananda's teachings emphasized a holistic approach to well-being, integrating physical, mental, and spiritual practices. He introduced and systematized practices like Yoga Nidra, which have gained worldwide acclaim for their profound benefits. Throughout his life, he traveled extensively, establishing ashrams and yoga centers, and spreading his message of self-realization and inner peace. Swami Satyananda's legacy lives on through the Bihar School of Yoga and the countless individuals and teachers he inspired, continuing to guide practitioners on their path to holistic health and spiritual enlightenment. He attained maha Samadhi at midnight of 5th December, 2009 in the presence of his disciples.
             </Typography>
           </Grid>
         </Grid>
@@ -221,7 +221,9 @@ function YogaTradition() {
             </Typography>
             <Divider className={classes.divider} />
             <Typography variant="body1" className={classes.guruDescription}>
-              Swami Niranjanananda Saraswati, born on February 14, 1960, in Rajnandgaon, Chhattisgarh, India, is a revered spiritual leader and the designated successor of Swami Satyananda Saraswati. His spiritual journey began at a remarkably young age under the guidance of his guru. By the age of four, Swami Niranjanananda had already embarked on his yogic path at the Bihar School of Yoga. In 1971, he was initiated into Dashnami sannyasa, and for the next eleven years, he traveled extensively, sharing the teachings of yoga in Europe, Australia, and the Americas. His international experiences enriched his understanding and practice of yoga, contributing to his global perspective on spiritual and holistic health. Upon his return to India in 1983, Swami Niranjanananda assumed leadership roles at the Bihar School of Yoga and its associated institutions. His vision led to the establishment of Bihar Yoga Bharati in 1994, the first university dedicated to the study of yoga. He also founded the Yoga Publications Trust in 2000, ensuring the widespread dissemination of yogic knowledge. Swami Niranjanananda's contributions to literature include numerous books on yoga, tantra, and the Upanishads, providing valuable insights and guidance to practitioners worldwide. In recognition of his distinguished service in the field of yoga, he was awarded the Padma Bhushan in 2017, one of India's highest civilian honors. Swami Niranjanananda continues to inspire countless individuals, embodying the principles of yoga and leading them on a path of self-realization and inner peace.
+            Swami Niranjanananda Saraswati, born on February 14, 1960, in Rajnandgaon, Chhattisgarh, India, is a revered spiritual propagator and the designated successor of Swami Satyananda Saraswati. His spiritual journey began at a remarkably young age under the guidance of his guru. By the age of four, Swami Niranjanananda had already embarked on his yogic path at the Bihar School of Yoga. In 1971, he was initiated into Dashnami sannyasa, and for the next eleven years, he traveled extensively, sharing the teachings of yoga in Europe, Australia, and the Americas. His international experiences enriched his understanding and practice of yoga, contributing to his global perspective on spiritual and holistic health. Upon his return to India in 1983, Swami Niranjanananda assumed leadership roles at the Bihar School of Yoga and its associated institutions. His vision led to the establishment of Bihar Yoga Bharati in 1994, the first university dedicated to the study of yoga. He also founded the Yoga Publications Trust in 2000, ensuring the widespread dissemination of yogic knowledge. Swami Niranjanananda's contributions to literature include numerous books on yoga, tantra, and the Upanishads, providing valuable insights and guidance to practitioners worldwide. In recognition of his distinguished service in the field of yoga, he was awarded the Padma Bhushan in 2017, one of India's highest civilian honors. Swami Niranjanananda continues to inspire countless individuals, embodying the principles of yoga and leading them on a path of self-realization and inner peace.
+
+
             </Typography>
           </Grid>
         </Grid>
@@ -248,11 +250,10 @@ function YogaTradition() {
             </Typography>
             <Divider className={classes.divider} />
             <Typography variant="body1" className={classes.guruDescription}>
-            Swami Satyasangananda Saraswati, born in 1953 in West Bengal, is a distinguished spiritual propagator and author. Initiated into the Dashnami sannyasa tradition by Swami Satyananda Saraswati in 1982, she has dedicated her life to the study and practice of yoga and tantra. Known for her ability to present ancient teachings in a modern context, she has authored several influential books.
-In 2007, she became the Peethadhishwari of Rikhiapeeth, where she continues to promote holistic well-being and selfless service. Swami Satyasangananda's dedication to her guru's teachings and her work at Rikhiapeeth have made her an inspirational figure in the world of yoga and spirituality.
+              Swami Satyasangananda Saraswati, born in 1953 in West Bengal, is a distinguished spiritual propagator and author. Initiated into the Dashnami sannyasa tradition by Swami Satyananda Saraswati in 1982, she has dedicated her life to the propagation of yoga and tantra. Known for her ability to present ancient teachings in a modern context, she has authored several influential books. In 2007, she became the Peethadhishwari of Rikhiapeeth, where she continues to promote holistic well-being and selfless service. Swami Satyasangananda's dedication to her guru's teachings and her work at Rikhiapeeth have made her an inspirational figure in the world of yoga and spirituality.
             </Typography>
           </Grid>
-        </Grid>
+        </Grid> 
       </Box>
     </Container>
   );
